@@ -19,3 +19,23 @@ export function chunkArray<T>(array: T[], size: number): T[][] {
   }
   return chunks;
 }
+
+export function matchElements<
+  T extends Record<string, unknown>,
+  K extends keyof T,
+>(items: T[K][], objects: T[], key: K): T[] {
+  const uniqueItems = new Set(items); // Remove duplicate elements from the input array
+  const uniqueObjects: T[] = [];
+
+  const seen = new Set<T[K]>(); // Track seen values to ensure uniqueness in the output
+
+  for (const obj of objects) {
+    const value = obj[key];
+    if (uniqueItems.has(value) && !seen.has(value)) {
+      uniqueObjects.push(obj);
+      seen.add(value);
+    }
+  }
+
+  return uniqueObjects;
+}
