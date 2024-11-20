@@ -1,3 +1,3 @@
-# js-lib
+# ts-lib
 
-Javascript utility functions for web development
+TypeScript utility functions for web development
