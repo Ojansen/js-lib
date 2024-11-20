@@ -10,6 +10,7 @@
     "clean": "rm -rf dist",
     "prepublishOnly": "npm run build",
     "test": "vitest",
+    "test:watch": "vitest --watch",
     "lint": "biome lint --error-on-warnings",
     "check": "biome check --write",
     "release": "pnpm run lint && pnpm run lint && pnpm run build && changelogen --release && npm publish && git push --follow-tags"
