@@ -1,10 +1,9 @@
 import typescript from "@rollup/plugin-typescript";
 
 export default {
-  input: "src/index.ts", // Adjust the input path as needed
+  input: "src/index.ts",
   output: {
     dir: "dist",
-    format: "esm", // CommonJS format; change to 'esm' for ES modules
   },
   plugins: [typescript()],
 };
