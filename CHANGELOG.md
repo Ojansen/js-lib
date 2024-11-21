@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.3
+
+[compare changes](https://github.com/Ojansen/ts-utils-lib/compare/v0.0.2...v0.0.3)
+
+### 🩹 Fixes
+
+- Rename to ts-utils-lib ([f54387a](https://github.com/Ojansen/ts-utils-lib/commit/f54387a))
+
+### ❤️ Contributors
+
+- Obe Jansen <obe.jansen@bttr.nl>
+
 ## v0.0.2
 
 
