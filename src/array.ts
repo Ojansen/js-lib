@@ -1,5 +1,4 @@
-import { T } from "vitest/dist/chunks/reporters.D7Jzd9GS";
-
+import { isPrime } from "./guards";
 /**
  * Removes duplicate values from an array, returning a new array with unique elements.
  *
@@ -161,4 +160,19 @@ export function range(start: number, end: number, step: number): number[] {
     }
   }
   return result;
+}
+
+/**
+ * Filters an array to include only prime numbers.
+ *
+ * @param numbers - An array of numbers to filter.
+ * @returns {number[]} An array of prime numbers. Returns an empty array if no primes exist.
+ *
+ * @example
+ * filterPrimes([1, 2, 3, 4, 5]); // [2, 3, 5]
+ * filterPrimes([8, 9, 10]); // []
+ * filterPrimes([13, 17, 19]); // [13, 17, 19]
+ */
+export function filterPrimes(numbers: number[]): number[] {
+  return numbers.filter(isPrime);
 }
