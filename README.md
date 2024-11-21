@@ -1,3 +1,3 @@
-# ts-lib
+# ts-utils-lib
 
-TypeScript utility functions for web development
+TypeScript utility functions for development
