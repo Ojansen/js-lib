@@ -6,7 +6,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
+    "build": "rollup -c",
     "clean": "rm -rf dist",
     "prepublishOnly": "npm run build",
     "test": "vitest",
@@ -20,8 +20,11 @@
   "license": "ISC",
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
+    "@rollup/plugin-typescript": "^12.1.1",
     "@types/node": "^22.9.1",
+    "rollup": "^4.27.3",
     "typescript": "^5.6.3",
-    "vitest": "^2.1.5"
+    "vitest": "^2.1.5",
+    "tslib": "^2.8.1"
   }
 }
