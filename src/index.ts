@@ -1,2 +1,3 @@
-export { uniqueArray, chunkArray, deepFlatten, matchElements } from "./array";
-export { relu, sigmoid } from "./math";
+export * from "./array";
+export * from "./object";
+export * from "./math";
