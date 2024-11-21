@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { relu } from "../../src/math";
+import { relu } from "../../src";
 
 describe("relu", () => {
   it("returns the input when it is positive", () => {

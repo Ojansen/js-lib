@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { sigmoid } from "../../src/math";
+import { sigmoid } from "../../src";
 
 describe("sigmoid", () => {
   it("returns a value between 0 and 1", () => {

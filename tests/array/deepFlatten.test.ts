@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { deepFlatten } from "../../src/array";
+import { deepFlatten } from "../../src";
 
 describe("deepFlatten", () => {
   it("flattens a nested array of numbers", () => {

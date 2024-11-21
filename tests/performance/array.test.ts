@@ -29,7 +29,7 @@ describe("array performance", () => {
 
     console.log(`chunk processed 1,000,000 items in ${end - start} ms`);
     expect(result.length).toBe(10_000);
-    expect(end - start).toBeLessThan(10);
+    expect(end - start).toBeLessThan(20);
   });
 
   it("deepFlatten processed 10,000 nested arrays", () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { matchElements } from "../../src/array";
+import { matchElements } from "../../src";
 
 describe("matchElements", () => {
   const objects = [
@@ -37,7 +37,11 @@ describe("matchElements", () => {
 
   it("handles an empty objects array", () => {
     const elements = ["apple", "banana"];
-    const result = matchElements(elements, [], "fruit");
+    const result = matchElements<Record<string, string>, string>(
+      elements,
+      [],
+      "fruit",
+    );
     expect(result).toEqual([]);
   });
 
